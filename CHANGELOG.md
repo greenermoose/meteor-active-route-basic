@@ -5,9 +5,9 @@
   * Replacing coffeescripts with JS files (used [fiddlesalad])
   * Renaming exported symbol to ActiveRouteBasic
 
-  ## Previous
+## Previous
 
-    * See [git history]
+  * See [git history]
 
 [fiddlesalad]: http://fiddlesalad.com/coffeescript/
 [git history]: https://github.com/greenermoose/meteor-active-route-basic/commits
