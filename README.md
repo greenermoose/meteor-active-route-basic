@@ -15,6 +15,8 @@ This is based on `zimme:active-route` with functionality removed and bugs added.
 
 ## Install
 
+Not there yet, but eventually this is how you'll use it:
+
 ```sh
 meteor add greenmoose:active-route-basic
 ```
