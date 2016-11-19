@@ -2,5 +2,12 @@
 
   * Removing support for all routers except kadira flow router
   * Removing coffeescript dependency
-  * Replacing coffeescripts with JS files (used http://fiddlesalad.com/coffeescript/)
+  * Replacing coffeescripts with JS files (used [fiddlesalad])
   * Renaming exported symbol to ActiveRouteBasic
+
+  ## Previous
+
+    * See [git history]
+
+[fiddlesalad]: http://fiddlesalad.com/coffeescript/
+[git history]: https://github.com/greenermoose/meteor-active-route-basic/commits
