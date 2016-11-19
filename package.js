@@ -47,5 +47,5 @@ Package.onTest(function(api) {
     'tests/client/helpers.js'
   ], 'client');
 
-  api.addFiles('tests/server/activeroute.js', 'server');
+  // There are no server tests because kadira flow router only provides client routes
 });

@@ -5,9 +5,10 @@ if (!(Package.templating && Package.spacebars)) { return; }
 Template = Package.templating.Template;
 Spacebars = Package.spacebars.Spacebars;
 
-isActive = function(type, inverse) {
+isActive = function(type, veracity) {
   var helperName;
-  if (inverse == null) { inverse = false; }
+  if (veracity == null) { veracity = true; }
+  var inverse = !veracity;
   helperName = 'is';
   if (inverse) { helperName += 'Not'; }
   helperName += "Active" + type;
@@ -68,11 +69,13 @@ isActive = function(type, inverse) {
   };
 };
 
+// changing how isActive is called
+// true now means true, false means false
 helpers = {
-  isActiveRoute: isActive('Route'),
-  isActivePath: isActive('Path'),
-  isNotActiveRoute: isActive('Route', true),
-  isNotActivePath: isActive('Path', true)
+  isActiveRoute: isActive('Route', true),
+  isActivePath: isActive('Path', true),
+  isNotActiveRoute: isActive('Route', false),
+  isNotActivePath: isActive('Path', false)
 };
 
 for (name in helpers) {
