@@ -4,30 +4,27 @@
 [![License Badge]][License]
 [![Gratipay Badge]][Gratipay]
 
-# Active route helpers
+# Basic active route helpers
 
 This package provide helpers for figuring out if some route or path is or isn't
 the currently active route.
 
 ## Package rename
 
-Because of support for `kadira:flow-router` I've decided to rename
-`zimme:iron-router-active` to `zimme:active-route` with version `2.0.0`.
+This is based on `zimme:active-route` with functionality removed and bugs added.
 
 ## Install
 
 ```sh
-meteor add zimme:active-route
+meteor add greenmoose:active-route-basic
 ```
 
 ## Supported routers
 
-* [`iron:router`]
 * [`kadira:flow-router`]
-* [`meteorhacks:flow-router`] (Deprecated)
 
-If multiple routers are installed, the package will match against `iron:router`
-routes first, then `kadira:flow-router` and lastly `meteorhacks:flow-router`.
+Only the one, hence acitve-route-basic.  If you use multiple routers, you want
+`zimme:active-route` and not this package.
 
 ## Template helpers
 
@@ -211,7 +208,7 @@ ActiveRoute.configure({
 
 ## Notes
 
-* SHOULD be backwards-compatible with `zimme:iron-router-active@1.0.4`
+* No promises about backwards compatibility.
 * `ActiveRoute.config` is an alias for `ActiveRoute.configure`
 * `className` is an alias for `class` in template helpers
 * This package supports javascript's `RegExp`, [here][Regexp]'s some good info

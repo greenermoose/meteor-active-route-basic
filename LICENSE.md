@@ -1,5 +1,9 @@
 The MIT License (MIT)
 
+Copyright (c) 2016 Fred Horch
+
+based on prior work called "meter-active-route"
+
 Copyright (c) 2014-2015 Simon Fridlund
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
