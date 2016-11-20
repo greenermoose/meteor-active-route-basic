@@ -14,8 +14,6 @@ JavaScript and meteor.
 
 ## Install
 
-Not there yet, but eventually this is how you'll use it:
-
 ```sh
 meteor add greenmoose:active-route-basic
 ```
@@ -24,7 +22,7 @@ meteor add greenmoose:active-route-basic
 
 * [`kadira:flow-router`]
 
-Only the one, hence acitve-route-basic.  If you use multiple routers, you want
+Only the one, hence active-route-basic.  If you use multiple routers, you want
 `zimme:active-route` and not this package.
 
 ## Template helpers
