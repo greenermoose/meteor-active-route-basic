@@ -147,7 +147,7 @@ At least one of Data context, `route` or `path` need to be supplied.
 
 Basic usage examples.
 
-#### ActiveRoute.name
+#### ActiveRouteBasic.name
 
 Helper to check if the supplied route name matches the currently active route's
 name.
@@ -155,30 +155,30 @@ name.
 Returns either `true` or `false`.
 
 ```js
-ActiveRoute.name('home');
+ActiveRouteBasic.name('home');
 // Returns true if current route's name is 'home'.
 
-ActiveRoute.name(new RegExp('home|dashboard'));
+ActiveRouteBasic.name(new RegExp('home|dashboard'));
 // Returns true if current route's name contains 'home' or 'dashboard'.
 
-ActiveRoute.name(/^products/);
+ActiveRouteBasic.name(/^products/);
 // Returns true if current route's name starts with 'products'.
 ```
 
-#### ActiveRoute.path
+#### ActiveRouteBasic.path
 
 Helper to check if the supplied path matches the currently active route's path.
 
 Returns either `true` or `false`.
 
 ```js
-ActiveRoute.path('/home');
+ActiveRouteBasic.path('/home');
 // Returns true if current route's path is '/home'.
 
-ActiveRoute.path(new RegExp('users'));
+ActiveRouteBasic.path(new RegExp('users'));
 // Returns true if current route's path contains 'users'.
 
-ActiveRoute.path(/\/edit$/i);
+ActiveRouteBasic.path(/\/edit$/i);
 // Returns true if current route's path ends with '/edit', matching is
 // case-insensitive
 ```
@@ -200,7 +200,7 @@ The javascript helpers accepts `String` or `RegExp` as an argument.
 ```js
 // Configure helpers globally
 // The settings below are the package default settings
-ActiveRoute.configure({
+ActiveRouteBasic.configure({
   activeClass: 'active',
   caseSensitive: true,
   disabledClass: 'disabled',
@@ -211,7 +211,6 @@ ActiveRoute.configure({
 ## Notes
 
 * No promises about backwards compatibility.
-* `ActiveRoute.config` is an alias for `ActiveRoute.configure`
 * `className` is an alias for `class` in template helpers
 * This package supports javascript's `RegExp`, [here][Regexp]'s some good info
 

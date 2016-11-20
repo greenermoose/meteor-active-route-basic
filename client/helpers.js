@@ -6,6 +6,7 @@ Template = Package.templating.Template;
 Spacebars = Package.spacebars.Spacebars;
 
 isActive = function(type, veracity) {
+  // console.log("isActive");
   var helperName;
   if (veracity == null) { veracity = true; }
   var inverse = !veracity;
@@ -32,7 +33,8 @@ isActive = function(type, veracity) {
       "class": Match.Optional(String),
       className: Match.Optional(String),
       regex: Match.Optional(Match.OneOf(RegExp, String)),
-      name: Match.Optional(String), path: Match.Optional(String)
+      name: Match.Optional(String),
+      path: Match.Optional(String)
     });
     check(options, pattern);
     regex = options.regex, name = options.name, path = options.path;
@@ -59,10 +61,10 @@ isActive = function(type, veracity) {
     }
     if (type === 'Path') { isPath = true; }
     if (isPath) {
-      result = ActiveRoute.path(regex);
+      result = ActiveRouteBasic.path(regex);
     } else {
       options = _.defaults(attributes, attributes.data);
-      result = ActiveRoute.name(regex, _.omit(options, ['class', 'className', 'data', 'regex', 'name', 'path']));
+      result = ActiveRouteBasic.name(regex, _.omit(options, ['class', 'className', 'data', 'regex', 'name', 'path']));
     }
     if (inverse) { result = !result; }
     if (result) { return className; } else { return false; }
