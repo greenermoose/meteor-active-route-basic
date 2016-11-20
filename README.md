@@ -1,17 +1,16 @@
-[![Gitter Badge]][Gitter]
-[![Code Climate Badge]][Code Climate]
-[![Travis Badge]][Travis]
-[![License Badge]][License]
-[![Gratipay Badge]][Gratipay]
-
 # Basic active route helpers
 
 This package provide helpers for figuring out if some route or path is or isn't
 the currently active route.
 
-## Package rename
+## Package ancestry and motivation
 
 This is based on `zimme:active-route` with functionality removed and bugs added.
+
+This was written as an exercise to learn how to Meteor's package system works,
+and to remove features and dependencies so that this package's core
+functionality can be more easily maintained by someone who is still learning
+JavaScript and meteor.
 
 ## Install
 
@@ -212,19 +211,7 @@ ActiveRouteBasic.configure({
 
 * No promises about backwards compatibility.
 * `className` is an alias for `class` in template helpers
-* This package supports javascript's `RegExp`, [here][Regexp]'s some good info
+* This package supports javascript's `RegExp`; see [here][Regexp] for some good info
 
-[Code Climate]: https://codeclimate.com/github/zimme/meteor-active-route
-[Code Climate Badge]: https://img.shields.io/codeclimate/github/zimme/meteor-active-route.svg
-[Gitter]: https://gitter.im/zimme/meteor-active-route
-[Gitter Badge]: https://img.shields.io/badge/gitter-join_chat-brightgreen.svg
-[`iron:router`]: https://atmospherejs.com/iron/router
 [`kadira:flow-router`]: https://atmospherejs.com/kadira/flow-router
-[License]: https://github.com/zimme/meteor-active-route/blob/master/LICENSE.md
-[License Badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[`meteorhacks:flow-router`]: https://atmospherejs.com/meteorhacks/flow-router
 [Regexp]: https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions
-[Travis]: https://travis-ci.org/zimme/meteor-active-route
-[Travis Badge]: https://img.shields.io/travis/zimme/meteor-active-route.svg
-[Gratipay Badge]: https://img.shields.io/badge/gratipay-$-brightgreen.svg
-[Gratipay]: https://gratipay.com/meteor-active-route
